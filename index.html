@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acceso a Área Clientes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="Clientes">
+    <h1>Accede a tu Área Clientes</h1>
+    <form>
+      <div class="docu">
+        <label>Elige tu documento</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="document-type" value="dni" checked>
+            DNI o Tarjeta de residencia
+          </label>
+          <label>
+            <input type="radio" name="document-type" value="passport">
+            Pasaporte
+          </label>
+        </div>
+      </div>
+      <div class="docu">
+        <label for="document-number">Número de documento</label>
+        <input type="text" id="document-number" placeholder="DNI o Tarjeta de residencia" required>
+      </div>
+      <div class="docu">
+        <label>Fecha de nacimiento</label>
+        <div class="fecha">
+          <input type="text" placeholder="DD" maxlength="2" required>
+          <input type="text" placeholder="MM" maxlength="2" required>
+          <input type="text" placeholder="AAAA" maxlength="4" required>
+        </div>
+      </div>
+      <div class="input-group">
+        <label>
+          <input type="checkbox"> Recordar
+        </label>
+      </div>
+      <button type="submit" class="btn-submit">Entrar</button>
+    </form>
+    <div class="links">
+      <a href="#">Acceder con DNI electrónico</a>
+      <a href="#">Más información sobre seguridad</a>
+    </div>
+  </div>
+</body>
+</html>
